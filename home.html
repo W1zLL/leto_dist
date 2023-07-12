@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Калькулятор</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230712175532">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header data-scroll="117" data-scroll-show="99999" class="header">
+			<div class="header__container">
+				<a href="" class="header__logo header__logo--big"><img class="" src="img/logo.svg" alt=""></a>
+				<a href="" class="header__logo header__logo--small"><img class="" src="img/logo-small.svg" alt=""></a>
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="" class="menu__link">Калькулятор</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Что мы перевозим</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Маршруты</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__connect">
+					<a class="header__tel" href="tel:+74993502633">+7 (499) 350 26 33</a>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="calculation page__calculation">
+				<div class="calculation__container">
+					<div class="calculation__forms">
+						<div class="calculation__crumbs crumbs"><a href="">Главная</a><span class="crumbs__separator">/</span><span>Расчет и оформление заказа</span></div>
+						<div class="calculation__form-trucking">
+							<h1 class="calculation__title form-title">Расчет и оформление заказа</h1>
+							<div class="calculation__subtitle form-title__subtitle">*Поля, обязательные для заполнения</div>
+							<form data-dev action="" method="get" class="form-trucking__form">
+								<div class="form-trucking__vehicle vehicle-form">
+									<label for="" class="vehicle-form__label form-label">Выбор транспортного средства*</label>
+									<div class="vehicle-form__row">
+										<select name="form[]" data-required data-error="Обязательное поле" class="vehicle-form__select">
+											<option value="" data-class="select__placeholder">Грузоподъёмность</option>
+											<option value="1">Пункт №1</option>
+											<option value="2">Пункт №2</option>
+											<option value="3">Пункт №3</option>
+											<option value="4">Пункт №4</option>
+										</select>
+										<select name="form[]" data-required data-error="Обязательное поле" class="vehicle-form__select">
+											<option value="" data-class="select__placeholder">Тип кузова</option>
+											<option value="1">Пункт №1</option>
+											<option value="2">Пункт №2</option>
+											<option value="3">Пункт №3</option>
+											<option value="4">Пункт №4</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-trucking__route route-form">
+									<label for="" class="route-form__label form-label">Маршрут*</label>
+									<div class="route-form__column">
+										<select data-required data-error="Обязательное поле" data-search data-class-modif="search" name="form[]" class="route-form__select _search-select">
+											<option value="">Москва, МО</option>
+											<option value="1">Пункт №1</option>
+											<option value="2">Пункт №2</option>
+											<option value="3">Пункт №3</option>
+											<option value="4">Пункт №4</option>
+										</select>
+										<select data-required data-error="Обязательное поле" data-search data-class-modif="search" name="form[]" class="route-form__select">
+											<option value="">Санкт-Петербург</option>
+											<option value="1">Пункт №1</option>
+											<option value="2">Пункт №2</option>
+											<option value="3">Пункт №3</option>
+											<option value="4">Пункт №4</option>
+										</select>
+									</div>
+								</div>
+
+								<div class="form-trucking__departure-date departure-date-form">
+									<label for="datepicker" class="departure-date-form__label form-label">Дата, планируемой отправки*</label>
+									<div class="departure-date-form__input">
+										<div class="departure-date-form__date">
+											<input data-required data-error="Обязательное поле" id="datepicker" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="placeholder" class="input input_small input_date" />
+										</div>
+									</div>
+								</div>
+
+								<div class="form-trucking__cargo cargo-form">
+									<label for="" class="cargo-form__label form-label">Данные о грузе*</label>
+									<div class="cargo-form__column">
+										<div class="cargo-form__row cargo-form__row_col">
+											<div class="cargo-form__input-wrap">
+												<input data-required data-error="Обязательное поле" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Наименование груза" class="input" />
+											</div>
+											<div class="cargo-form__input-wrap">
+												<select data-required data-error="Обязательное поле" name="form[]" class="form">
+													<option value="" data-class="select__placeholder">Категория груза</option>
+													<option value="1">Пункт №1</option>
+													<option value="2">Пункт №2</option>
+													<option value="3">Пункт №3</option>
+													<option value="4">Пункт №4</option>
+												</select>
+											</div>
+										</div>
+										<div class="cargo-form__row">
+											<div class="input-wrap">
+												<input data-required autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Вес" class="input input_small input-wrap__input" />
+												<span class="input-wrap__label">т</span>
+											</div>
+											<div class="input-wrap">
+												<input data-required autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Объем" class="input input_small input-wrap__input" />
+												<span class="input-wrap__label">куб.м.</span>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="form-trucking__payment-terms payment-terms-form">
+									<label for="" class="payment-terms-form__label form-label">Условия оплаты</label>
+									<div class="payment-terms-form__column">
+										<div class="options _one-line">
+											<div class="options__item">
+												<input hidden id="o_1" class="options__input" checked type="radio" value="1" name="option" />
+												<label for="o_1" class="options__label"><span class="options__text">с НДС</span></label>
+											</div>
+											<div class="options__item">
+												<input hidden id="o_2" class="options__input" type="radio" value="2" name="option" />
+												<label for="o_2" class="options__label"><span class="options__text">без НДС</span></label>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="form-trucking__add-info add-info-form">
+									<label for="" class="add-info-form__label form-label">Дополнительная информация</label>
+									<div class="add-info-form__row add-info-form__row_first">
+										<select name="form[]" class="form">
+											<option value="" data-class="select__placeholder">Вид упаковки</option>
+											<option value="1">Пункт №1</option>
+											<option value="2">Пункт №2</option>
+											<option value="3">Пункт №3</option>
+											<option value="4">Пункт №4</option>
+										</select>
+										<textarea autocomplete="off" name="form[]" placeholder="Комментарий" data-error="Ошибка" class="input textarea"></textarea>
+										<!-- <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Комментарий" class="input" /> -->
+									</div>
+									<div class="add-info-form__row">
+										<div class="checkbox">
+											<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+											<label for="c_1" class="checkbox__label _one-line"><span class="checkbox__text">Требуется температурный режим</span></label>
+										</div>
+									</div>
+									<div class="add-info-form__row _row">
+										<label for="add-info-form__input-1" class="add-info-form__input-wrap _mega-small"><input maxlength="6" id="add-info-form__input-1" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="от -001°С" class="input input_mega-small add-info-form__input add-info-form__input_1" /></label>
+										<label for="add-info-form__input-2" class="add-info-form__input-wrap _mega-small"><input maxlength="6" id="add-info-form__input-2" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="до +001°С" class="input input_mega-small add-info-form__input add-info-form__input_2" /></label>
+									</div>
+								</div>
+								<button type="submit" class="button calculation__button">Продолжить</button>
+							</form>
+						</div>
+
+						<div class="client page__client">
+							<label for="" class="client__label form-label">Информация о клиенте*</label>
+							<div class="client__wrap">
+								<form data-popup-message="#popup1" data-dev action="" method="get" class="client__form">
+									<div class="form-client">
+										<input data-required data-error="Обязательное поле" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="ФИО" class="input form-client__input" />
+										<input data-required data-error="Обязательное поле" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Моб. тел" class="input form-client__input" />
+										<input data-required data-error="Обязательное поле" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Наименование компании" class="input form-client__input" />
+										<textarea autocomplete="off" name="form[]" placeholder="Комментарий" data-error="Ошибка" class="input form-client__input form-client__text-area"></textarea>
+										<input data-required data-error="Обязательное поле" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="ИНН" class="input form-client__input" />
+										<input data-required="email" data-error="Обязательное поле" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="E-mail" class="input form-client__input" />
+										<div class="file">
+											<input id="file_1" autocomplete="off" type="file" name="form[]" data-error="Ошибка" placeholder="Добавить документ" class="input form-client__input file__input" />
+											<label for="file_1" class="file__label">+ Добавить документ</label>
+										</div>
+									</div>
+									<div class="checkbox client__checkbox">
+										<input data-required data-error="Обязательное поле" id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+										<label for="c_2" class="checkbox__label _one-line">
+											<span class="checkbox__text">Согласен на обработку <a class="form-client__link" href="">персональных данных</a></span>
+										</label>
+									</div>
+									<!-- data-popup="#popup1" -->
+									<button data-popup="#popup1" type="submit" class="button calculation__button">Оформить заказ</button>
+								</form>
+							</div>
+						</div>
+					</div>
+
+					<div data-da=".calculation__form-trucking,990" class="calculation__total-wrap">
+						<section class="total calculation__total">
+							<h2 class="total__title">Расчет стоимости</h2>
+							<div class="total__list">
+								<div class="total__item item-total">
+									<div class="item-total__title">Транспорт</div>
+									<div class="item-total__row">
+										<div class="item-total__item">Грузоподъёмность: 3т</div>
+										<div class="item-total__item">Тип кузова: фургон</div>
+									</div>
+								</div>
+								<div class="total__item item-total">
+									<div class="item-total__title">Маршрут</div>
+									<ul class="item-total__list">
+										<li>
+											<div class="item-total__item">Москва</div>
+										</li>
+										<li>
+											<div class="item-total__item">Санкт-Петербург</div>
+										</li>
+									</ul>
+								</div>
+								<div class="total__item total__item_pt item-total">
+									<div class="item-total__title">Время в пути</div>
+									<div class="item-total__row item-total__row_separator">
+										<span class="item-total__item">3 дня</span>
+										<span class="item-total__item">23.03.2023 - 26.03.2023</span>
+									</div>
+								</div>
+								<div class="total__item item-total">
+									<div class="item-total__title">Расстояние</div>
+									<div class="item-total__row">
+										<span>300 км</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="total__subtotal">
+								<div class="total__star _icon-star"></div>
+								<div class="total__price price-total">
+									<div class="price-total__content">
+										<div class="price-total__title">Стоимость грузоперевозки*</div>
+										<div class="price-total__price"><span>1 000</span><span> руб.</span></div>
+									</div>
+								</div>
+
+								<div class="total__explanation">
+									<span>*Указана ориентировочная стоимость. Не оферта. </span><span class="total__typpy" data-tippy-content="Подсказка Подсказка Подсказка Подсказка Подсказка Подсказка Подсказка Подсказка Подсказка "><img src="img/icons/more.svg" alt="" /></span>
+								</div>
+
+								<div class="total__conditions">
+									<p class="total__conditions-text _icon-truck">Грузоперевозка осуществляется машиной от двери до двери без погрузо-разгрузочных работ</p>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div data-spollers="767.98" data-one-spoller class="footer__grid">
+					<div class="footer__logo">
+						<a href="" class="footer__link"><img src="img/logo.svg" alt="" /></a>
+					</div>
+
+					<div class="footer__column footer__column_3 spollers">
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title">Наши услуги</button>
+							<div class="spollers__body">
+								<ul class="spollers__list list-spoller">
+									<li class="list-spoller__item"><a href="" class="footer__link">Перевозка отдельным транспортом</a></li>
+									<li class="list-spoller__item"><a href="" class="footer__link">Страхование грузов</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title">Отраслевые решения</button>
+							<div class="spollers__body">
+								<ul class="spollers__list list-spoller">
+									<li class="list-spoller__item"><a href="" class="footer__link">Производство</a></li>
+									<li class="list-spoller__item"><a href="" class="footer__link">Торговля</a></li>
+									<li class="list-spoller__item"><a href="" class="footer__link">Строительство</a></li>
+									<li class="list-spoller__item"><a href="" class="footer__link">Научные исследования</a></li>
+									<li class="list-spoller__item"><a href="" class="footer__link">Логистика</a></li>
+									<li class="list-spoller__item"><a href="" class="footer__link">Телекоммуникация</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="footer__column footer__column_3 spollers">
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title">Что мы перевозим?</button>
+							<div class="spollers__body">
+								<ul class="spollers__list list-spoller">
+									<li class="list-spoller__item"><a href="" class="footer__link">Перевозка оборудования</a></li>
+									<li class="list-spoller__item"><a href="" class="footer__link">Перевозка стройматериалов</a></li>
+									<li class="list-spoller__item"><a href="" class="footer__link">Перевозка металлоконструкций</a></li>
+									<li class="list-spoller__item"><a href="" class="footer__link">Перевозка комплектующих и запчастей</a></li>
+									<li class="list-spoller__item"><a href="" class="footer__link">Перевозка ТНП</a></li>
+									<li class="list-spoller__item"><a href="" class="footer__link">Перевозка мебели</a></li>
+									<li class="list-spoller__item"><a href="" class="footer__link">Перевозка выставочных стендов</a></li>
+									<li class="list-spoller__item"><a href="" class="footer__link">Перевозка кабельного хозяйства</a></li>
+									<li class="list-spoller__item"><a href="" class="footer__link">Перевозка спецтехники</a></li>
+									<li class="list-spoller__item"><a href="" class="footer__link">Перевозка медтоваров и фармы</a></li>
+									<li class="list-spoller__item"><a href="" class="footer__link">Доставка сырья и материалов</a></li>
+									<li class="list-spoller__item"><a href="" class="footer__link">Перевозка электротоваров</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="footer__column footer__column_2 spollers">
+						<a href="" class="spollers__title footer__link">Маршруты</a>
+						<div class="spollers__item">
+							<a href="" class="spollers__title footer__link">Калькулятор</a>
+						</div>
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title">О компании</button>
+							<div class="spollers__body">
+								<ul class="spollers__list list-spoller">
+									<li class="list-spoller__item"><a href="" class="footer__link">Документы</a></li>
+									<li class="list-spoller__item"><a href="" class="footer__link">Кейсы</a></li>
+									<li class="list-spoller__item"><a href="" class="footer__link">Реализованные проекты</a></li>
+									<li class="list-spoller__item"><a href="" class="footer__link">ЧаВо</a></li>
+									<li class="list-spoller__item"><a href="" class="footer__link">Реквизиты</a></li>
+									<li class="list-spoller__item"><a href="" class="footer__link">Контакты</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer__info info-footer">
+				<div class="info-footer__container">
+					<div class="info-footer__seo seo-footer">
+						<div class="seo-footer__subtitle">Сайт и продвижение - Л.Э.Т.О.</div>
+						<div class="seo-footer__cookie">Сайт использует файлы cookie, которые содержат инфомиацию о предыдущих посещенияз веб-сайта. Если вы не хотите использовать файлы cookie, измените настройки браузера</div>
+					</div>
+					<div class="info-footer__user-agree info-footer__docs">
+						<div class="info-footer__document">docx</div>
+						<div class="info-footer__document-text"><a href="" class="footer__link">Пользовательское соглашение</a></div>
+					</div>
+					<div class="info-footer__rules-transportation info-footer__docs">
+						<div class="info-footer__document">pdf</div>
+						<div class="info-footer__document-text"><a href="" class="footer__link">Правила перевозки</a></div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<div id="popup1" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup__text">
+					<div data-close class="popup__icon _icon-successfully"></div>
+					<div class="popup__section">
+						<h3 class="popup__title">Ваша заявка на заказ ТС принята!</h3>
+						<div class="popup__subtitle">Период ответа на Ваше обращение<br> не более 3-х часов в рабочее время</div>
+					</div>
+					<div class="popup__hours">
+						Мы работает для Вас<br>с понедельника по пятницу с 9.00-18.00.
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230712175532"></script>
+</body>
+
+</html>
